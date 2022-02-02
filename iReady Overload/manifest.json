@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "iReady Auth",
+  "icons": { 
+    "128": "icon.png"
+  },
+  "version": "0.1.7",
+  "description": "iReady Extension that adds additional features to iReady website. ColdestSnowman#3775",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+  {
+    "js": ["main.js"],
+    "matches": ["*://login.i-ready.com/*"]
+  }
+]
+}
